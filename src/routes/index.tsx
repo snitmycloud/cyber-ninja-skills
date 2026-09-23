@@ -123,7 +123,7 @@ function Index() {
             <div className="mx-auto flex max-w-7xl flex-col gap-1">
               {["home", "course", "modules", "trainer"].map((item) => (
                 <a key={item} href={`#${item}`} className="mobile-nav-link" onClick={closeMenu}>
-                  {item[0].toUpperCase() + item.slice(1)}
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
                   <ChevronRight className="size-4" />
                 </a>
               ))}
